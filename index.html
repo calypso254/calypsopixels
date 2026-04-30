@@ -6,8 +6,17 @@
     <title>Calypso Pixels</title>
     <meta
       name="description"
-      content="Calypso Pixels — a creative launchpad for projects, experiments, and useful tools."
+      content="Calypso Pixels is a small creative studio and project hub for practical tools, experiments, and digital products."
     />
+    <meta property="og:title" content="Calypso Pixels" />
+    <meta
+      property="og:description"
+      content="A personal hub for practical tools, creative experiments, and digital products."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://calypsopixels.com/" />
+    <meta property="og:image" content="https://calypsopixels.com/assets/portrait.png" />
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,72 +28,100 @@
   <body>
     <div class="bg-grid" aria-hidden="true"></div>
     <header class="site-header">
-      <div class="logo-mark" aria-hidden="true">CP</div>
-      <div>
-        <p class="eyebrow">Creative Studio + Project Hub</p>
-        <h1>Calypso <span>Pixels.</span></h1>
-      </div>
+      <a class="brand-link" href="/" aria-label="Calypso Pixels home">
+        <img src="assets/calypso-pixels-wordmark.svg" alt="Calypso Pixels" />
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#studio">Studio</a>
+        <a href="#connect">Connect</a>
+      </nav>
     </header>
 
     <main>
-      <section class="hero card">
-        <h2>Hi, I’m Calypso Pixels 👋</h2>
-        <p>
-          This is my digital home base — a simple place to share current projects,
-          experiments, and whatever weird/awesome thing I build next.
-        </p>
-        <div class="cta-row">
-          <a class="btn primary" href="#projects">See Projects</a>
-          <a class="btn ghost" href="#connect">Connect</a>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Creative Studio + Project Hub</p>
+          <h1>Useful little builds with a bright edge.</h1>
+          <p class="lede">
+            Calypso Pixels is where I collect the tools, storefronts, experiments,
+            and odd practical ideas I actually want people to find.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn ghost" href="https://github.com/calypso254">GitHub</a>
+          </div>
         </div>
+        <figure class="portrait-card">
+          <img src="assets/portrait.png" alt="Portrait of the creator behind Calypso Pixels" />
+          <figcaption>builder, tinkerer, pixel-pusher</figcaption>
+        </figure>
       </section>
 
-      <section id="projects" class="card">
-        <h2>Featured Projects</h2>
+      <section id="projects" class="section-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Things worth a front door.</h2>
+        </div>
         <div class="project-grid">
           <article class="project">
+            <p class="project-type">Calculator</p>
             <h3>BoxFitCalculator</h3>
             <p>Quick box sizing math for packing, shipping, and practical fit checks.</p>
-            <a href="https://calypso254.github.io/boxfitcalculator/" aria-label="Visit BoxFitCalculator">Visit project →</a>
+            <a href="https://calypso254.github.io/boxfitcalculator/" aria-label="Visit BoxFitCalculator">Visit project</a>
           </article>
 
           <article class="project">
+            <p class="project-type">Generator</p>
             <h3>Card Catalog Generator</h3>
             <p>Create polished card layouts and smart content collections fast.</p>
-            <a href="https://cardcataloggenerator.com/" aria-label="Visit Card Catalog Generator">Visit project →</a>
+            <a href="https://cardcataloggenerator.com/" aria-label="Visit Card Catalog Generator">Visit project</a>
           </article>
 
           <article class="project">
+            <p class="project-type">Shop</p>
             <h3>Einstein Paper Co</h3>
             <p>A dedicated home for paper goods, visual experiments, and creative products.</p>
-            <a href="https://einsteinpaper.co/" aria-label="Visit Einstein Paper Co">Visit project →</a>
+            <a href="https://einsteinpaper.co/" aria-label="Visit Einstein Paper Co">Visit project</a>
           </article>
 
           <article class="project">
+            <p class="project-type">Workshop</p>
             <h3>Woodshop Wizard</h3>
             <p>Build planning, cut lists, and practical guides for makers.</p>
-            <a href="https://calypso254.github.io/woodshop-wizard/" aria-label="Visit Woodshop Wizard">Visit project →</a>
+            <a href="https://calypso254.github.io/woodshop-wizard/" aria-label="Visit Woodshop Wizard">Visit project</a>
           </article>
         </div>
       </section>
 
-      <section id="connect" class="card split">
+      <section id="studio" class="studio-band">
         <div>
-          <h2>Elsewhere on the internet</h2>
-          <p>Drop your real links in below when you're ready.</p>
+          <p class="eyebrow">Studio Notes</p>
+          <h2>Calypso Pixels is the catch-all for the useful, visual, half-weird stuff.</h2>
         </div>
-        <ul class="links">
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">YouTube</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Contact</a></li>
+        <p>
+          Some projects get their own domain. Some stay private because they solve
+          one very specific problem for me. This page is the curated shelf: the
+          public things, the experiments with legs, and the places I may want to send someone later.
+        </p>
+      </section>
+
+      <section id="connect" class="connect-panel">
+        <div>
+          <p class="eyebrow">Elsewhere</p>
+          <h2>Find the work, follow the trail.</h2>
+        </div>
+        <ul class="links" aria-label="External links">
+          <li><a href="https://github.com/calypso254">GitHub</a></li>
+          <li><a href="https://cardcataloggenerator.com/">Card Catalog Generator</a></li>
+          <li><a href="https://einsteinpaper.co/">Einstein Paper Co</a></li>
         </ul>
       </section>
     </main>
 
     <footer>
-      <p>© <span id="year"></span> Calypso Pixels.</p>
+      <img src="assets/calypso-pixels-wordmark.svg" alt="Calypso Pixels" />
+      <p>&copy; <span id="year"></span> Calypso Pixels.</p>
     </footer>
 
     <script>
