@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calypso Pixels</title>
+    <meta
+      name="description"
+      content="Calypso Pixels — a creative launchpad for projects, experiments, and useful tools."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="logo-mark" aria-hidden="true">CP</div>
+      <div>
+        <p class="eyebrow">Creative Studio + Project Hub</p>
+        <h1>Calypso <span>Pixels.</span></h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero card">
+        <h2>Hi, I’m Calypso Pixels 👋</h2>
+        <p>
+          This is my digital home base — a simple place to share current projects,
+          experiments, and whatever weird/awesome thing I build next.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#connect">Connect</a>
+        </div>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+          <article class="project">
+            <h3>Woodshop Wizard</h3>
+            <p>Build planning, cut lists, and practical guides for makers.</p>
+            <a href="#" aria-label="Woodshop Wizard link">Visit project →</a>
+          </article>
+
+          <article class="project">
+            <h3>Card Catalog Generator</h3>
+            <p>Create polished card layouts and smart content collections fast.</p>
+            <a href="#" aria-label="Card Catalog Generator link">Visit project →</a>
+          </article>
+
+          <article class="project">
+            <h3>Something New</h3>
+            <p>A slot for the next random thing I dream up and ship.</p>
+            <a href="#" aria-label="Future project link">Coming soon →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="connect" class="card split">
+        <div>
+          <h2>Elsewhere on the internet</h2>
+          <p>Drop your real links in below when you're ready.</p>
+        </div>
+        <ul class="links">
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Calypso Pixels.</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
